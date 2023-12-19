@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WP Pusher Checkout</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/b8c68483c9.js"></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav-container">
+      <div class="nav-left">
+        <img src="Images/wppusher-logo copy.svg" alt="WP Pusher Logo">
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li><a href="#">Download</a></li>
+          <li><a href="#">Learn more</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#" class="nav-link">Account</a></li>          
+        </ul>
+      </div>
+    </nav>  
+    <div class="fa-bars-container">
+      <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+    </div> 
+  </header>
+  <div class="open-menu">
+    <i class="fa fa-times" onclick="hideMenu()"></i>
+    <ul>
+      <li><a href="#download">Download</a></li>
+      <li><a href="#learn-more">Learn more</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#help">Help</a></li>
+      <li><a href="#account">Account</a></li>
+    </ul>                    
+  </div>
+  <main class="container">
+    <div class="hero-container">
+      <div class="payment-section">
+        <h1>Checkout</h1>
+        <div class="basic-information-section">
+          <div class="basic-information">
+            <p>1</p>
+            <h3>Your Basic Information</h3>
+          </div>
+          <div class="first-last-name">
+            <label for="first-name">First Name 
+              <div class="input-container">
+                <input name="first-name" type="text" required placeholder="Jane" class="input first-name" />
+              </div>
+            </label>
+            <label for="last-name">Last Name
+              <div class="input-container">
+                <input name="last-name" type="text" required placeholder="Doe" class="input"/>
+              </div>
+            </label>
+          </div>
+          <div class="email-container">
+            <label for="email">Email
+              <div class="email-input-container">
+                <input name="email" type="email" required placeholder="thebukunmi@gmail.com" class="email-input" />
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="payment-information-section">
+          <div class="payment-information">
+            <p>2</p>
+            <h3>Your Payment Information</h3>
+          </div>
+          <div class="credit-card-container">
+            <label for="credit-card">Credit Card
+              <div class="credit-input-container">
+                <div class="credit-input-container2">
+                  <input name="credit" type="text" required placeholder="Card Number" class="card-number-input" />                
+                  <input name="card-expiry-date" type="text" required placeholder="MM / YY" class="card-expiry-date-input">
+                  <input name="card-cvc" type="text" required placeholder="CVC" class="class-cvc-input">
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="buy-wp-pusher-container">
+          <button type="submit">Buy WP Pusher</button>
+        </div>
+        <div class="footer">
+          <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+          <p><strong><a href="#">Need any help?</a></strong> Don’t hesistate to contact support!</p>
+        </div>
+        <div class="powered-by-stripe">
+          <img src="Images/powered_by_stripe.png" alt="Powered by Stripe">
+        </div>        
+      </div>
+      <div class="freelancer-section">
+        <div class="freelancer-section1">
+          <h3>Freelancer</h3>
+          <div class="amount-per-yr">
+           <p class="currency">$</p>
+           <p class="amount">99</p>
+           <p class="time-frame">/ year</p>
+          </div>
+          <p class="renewal-time-span">Automatically renews <br> after 1 year</p>
+        </div>
+        <div class="freelancer-section2">
+          <div class="features">
+            <i class="fa fa-check" aria-hidden="true"></i>
+            <p>Use on 5 client site</p>
+          </div>
+          <div class="features">
+            <i class="fa fa-check" aria-hidden="true"></i>
+            <p>Private repositories</p>
+          </div>
+          <div class="features">
+            <i class="fa fa-check" aria-hidden="true"></i>
+            <p>Email support</p>
+          </div>
+        </div>
+        <div class="freelancer-section3">
+          <p class="extra-sites">Need 20 client sites?</p>
+          <p class="agency-plan"><a href="#">Switch to Agency plan.</a></p>
+        </div>
+        <div class="testimonials-container">
+          <p class="testimonial-text">FTP is horrible to deal with. <strong>WP Pusher </strong>solves that issue, and the customer support is awesome!</p>
+          <div class="testimonial-info">
+            <img src="Images/Bitmap.svg" alt="Testimonial Image">
+            <p>Kirk Beard</p>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
